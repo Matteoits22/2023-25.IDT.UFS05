@@ -5,8 +5,8 @@ Following the official how to
 https://learn.microsoft.com/en-us/azure/app-service/provision-resource-terraform
 
 
-export TF_VAR_AZURE_RESOURCE_GROUP=learn-...
-export TF_VAR_AZURE_APP_SERVICE_REPO_URL='....'
+export TF_VAR_AZURE_RESOURCE_GROUP=learn-a726f9f1-ed2a-4cf9-8395-5d997cf1b944
+export TF_VAR_AZURE_APP_SERVICE_REPO_URL='https://github.com/Matteoits22/2023-25.IDT.UFS05'
 
 terraform init
 
