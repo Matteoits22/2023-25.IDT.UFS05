@@ -40,7 +40,7 @@ resource "azurerm_resource_group" "rg" {
 # Create the Linux App Service Plan
 resource "azurerm_service_plan" "appserviceplan" {
   name                = "webapp-${random_integer.ri.result}"
-  location            = var.AZURE_REGION
+  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
   sku_name            = "S1"
