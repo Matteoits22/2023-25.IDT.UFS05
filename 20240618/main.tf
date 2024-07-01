@@ -97,7 +97,7 @@ resource "azurerm_app_service_source_control" "python_scm" {
 resource "azurerm_mysql_flexible_server" "example" {
   name                   = "its-rizzoli-idt-mysql-${random_integer.ri.result}"
   resource_group_name    = azurerm_resource_group.rg.name
-  location               = azurerm_resource_group.rg.location
+  location               = var.AZURE_REGION
   administrator_login    = "psqladmin"
   // WARN DONT DO THIS, USE SecOps services like Doppler and Azure Key Vault
   administrator_password = "H@Sh1CoR3!"
