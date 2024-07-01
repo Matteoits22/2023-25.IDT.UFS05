@@ -21,7 +21,7 @@ variable "AZURE_APP_SERVICE_REPO_URL" {
 
 variable "AZURE_REGION" {
   type    = string
-  default = "westus"
+  default = "eastus"
 }
 
 # Generate a random integer to create a globally unique name
